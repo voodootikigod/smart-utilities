@@ -10,15 +10,15 @@ smart project_name _githubusername_
 
 If you see output like this:
 
-  ERROR:gitosis.serve.main:Repository read access denied
-  fatal: The remote end hung up unexpectedly
+	ERROR:gitosis.serve.main:Repository read access denied
+	fatal: The remote end hung up unexpectedly
 
 It means that you have not created your repository with Joyent, go to http://smart.joyent.com/hosts to add one.
 
 If you see output like this:
 
-  Repository not found. If you've just created it, please try again in a few seconds.
-  fatal: The remote end hung up unexpectedly
-  fatal: remote smart already exists.
+	Repository not found. If you've just created it, please try again in a few seconds.
+	fatal: The remote end hung up unexpectedly
+	fatal: remote smart already exists.
 
 It means that you have not created your repository with GitHub, go to https://github.com/repositories/new

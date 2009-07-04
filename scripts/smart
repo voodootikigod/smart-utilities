@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ $# -lt 1 || $# -gt 3 ]
+if [ $# -lt 1 -o $# -gt 3 ]
 then
   echo "Error in $0 - Invalid Usage"
   echo "Syntax: $0 application_name <github_username>"
@@ -13,14 +13,14 @@ mkdir $1/web/public
 mkdir $1/web/public/images
 mkdir $1/web/public/javascripts
 mkdir $1/web/public/stylesheets
-echo "<html><head></head><body><p>I am in web/public, where are you?</p><p>Remove me</p></body></html>" $1/web/public/index.html
+echo "<html><head></head><body><p>I am in web/public, where are you?</p><p>Remove me</p></body></html>" > $1/web/public/index.html
 echo "system.use(\"com.joyent.Sammy\");\nGET(/\/*/, function()  { return \"Hello World\"; });" > $1/js/bootstrap.js
 
 cd $1
 git init
 git add .
 git commit -a -m "Adding the initial directory structure."
-if [ $# -gte 2 ]
+if [ $# -ge 2 ]
 then
   git remote add origin git@github.com:$2/$1.git
   git push origin master

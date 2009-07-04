@@ -13,7 +13,7 @@ If you see output like this:
 	ERROR:gitosis.serve.main:Repository read access denied
 	fatal: The remote end hung up unexpectedly
 
-It means that you have not created your repository with Joyent, go to http://smart.joyent.com/hosts to add one.
+It means that you have not created your repository with Joyent, go to the [Smart Platform Management - Hosts section](http://smart.joyent.com/hosts) to add one.
 
 If you see output like this:
 
@@ -21,4 +21,4 @@ If you see output like this:
 	fatal: The remote end hung up unexpectedly
 	fatal: remote smart already exists.
 
-It means that you have not created your repository with GitHub, go to https://github.com/repositories/new
+It means that you have not created your repository with GitHub, go to the [repository creator](https://github.com/repositories/new).
